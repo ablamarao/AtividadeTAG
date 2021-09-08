@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+JP' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Primeiras TAGs em HTML</title>
+</head>
+<body class="p-3 mb-2 bg-info text-whitesmoke">
+    <header> <!--Tag Header - Representa um grupo de suporte introdutório ou navegacional.-->
+        <h1> Atividade - TAGs em HTML</h1>
+        <h4>Aluno: Alessandro Barreto Lamarão</h4>
+    </header>
+    
+    <section> <!--Tag Section - É utilizada para marcar as seções de conteúdo de uma página.-->
+        <div align="center"> <!--Tag Div - Utilizada para alterar o estilo em partes específicas da página e posicionar objetos.-->
+            <p>TAGs em HTML 5 - Desenvolvimento Web</p>
+            <p>1 - Tag Details - Detalhamento com opção de expandir informações</p>
+            <details>
+                
+                <summary>Conhecendo a TAG details</summary>
+                    <div>Diego Braga</div>
+                    <div>Douglas Bouças</div>
+            </details>
+            <p></p>
+            <p>2 - Tag Datalist - Opção ao Select com autocomplete</p> <!--Tag Datalist - Opção ao Select com autocomplete<-->
+            <label for="semana">Selecione o dia: </label>
+            <input list="dias" name="semana" id="semana">
+            <datalist id="dias">
+                <option>Domingo</option>
+                <option>Segunda</option>
+                <option>Terça</option>
+            </datalist>
+            <p></p>
+            <p>3 - Tag Mark - Marca parte ou todo um texto</p> <!--Tag Mark - marca parte ou todo um texeto.-->
+            <p> Estamos aprendendo <mark class="p-lg-2 mb-auto bg-danger"> a função da tag Mark</mark></p>
+            <p></p>
+            <p>4 - Tag Cite - Para referenciar uma citação em texto</p> <!--Tag Cite - Referencia um citação-->
+            <cite>"Vamos fazer um trabalho muito melhor em programação se nos aproximarmos
+                da tarefa com uma plena apreciação de sua tremenda dificuldade, e se respeitarmos
+                as intrínsecas limitações da mente humana, chegando a ela como humildes programadores”
+                Alan Turing</cite>
+            <p></p>
+            <p>5 - Tag Optgroup - Cria um agrupamento de opções dentro do elemento Select</p> <!--Agrupa opções dentro de um Select-->
+            <select>
+                <optgroup label="Diego Braga">
+                  <option>Algoritmos</option>
+                  <option>Desenvolvimento Web</option>
+                </optgroup>
+                <optgroup label="Douglas Bouças">
+                  <option>Redes I</option>
+                  <option>Redes II</option>
+                </optgroup>
+              </select>
+              <p></p>
+              <p>6 - Tag Footer - Elemento de Rodapé</p>
+              <p>Em nosso exemplo podemos perceber com a descrição ao final da página</p>
+              <p>7 - Tag Section - É utilizada para marcar as seções de conteúdo de uma página. </p>
+              <p>Em nosso exemplo podemos perceber esta maior área na cor branca.</p>
+              <p>8 - Tag Div - Utilizada para alterar o estilo em partes específicas da página e posicionar objetos.</p>
+              <p>9 - Tag Header - Representa um grupo de suporte introdutório ou navegacional. 
+                  Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, 
+                  seções de cabeçalho, formulário de pesquisa, e outros.</p>
+              <p></p>
+              <p>10 - Tag Button - Cria um elemento Botão </p> <!--Tag Button - Cria um botão na página-->
+            <button type="button" class="btn btn-primary" onclick="clicar()">Clique Aqui!</button>
+            <p></p>
+            <p>Tags para acessibilidade:</p>
+            <div>O “fieldset” agrupa os elementos de uma mesma categoria e o “legend” define uma legenda para esse grupo.</div>
+        </div>
+            <fieldset>
+                <legend> Exemplo: Dados Pessoais</legend>
+                <label for=”nome”>Nome</label>
+                <input type=”text” id=”nome” name=”nome”>
+
+                <label for=”sobrenome”>Sobrenome</label>
+                <input type=”text” id=”sobrenome” name=”sobrenome”>
+            </fieldset>
+
+    </section>
+    <footer> <!--Tag de cria um espaço de Rodapé-->
+        <p><br>Disciplina: Desenvolvimento Web - Professor: Diego Braga - IFBA - Campus Porto Segro</p>
+    </footer>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
